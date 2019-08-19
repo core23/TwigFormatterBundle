@@ -9,29 +9,27 @@
 
 namespace Core23\TwigFormatterBundle\Tests\Twig;
 
-final class MockTwigLoader implements \Twig_LoaderInterface
+use Twig\Loader\LoaderInterface;
+use Twig\Source;
+
+final class MockTwigLoader implements LoaderInterface
 {
-    public function getSourceContext($name)
+    public function getSourceContext($name): Source
+    {
+        return new Source('', $name);
+    }
+
+    public function getCacheKey($name): string
     {
         return $name;
     }
 
-    public function getSource($name)
-    {
-        return $name;
-    }
-
-    public function getCacheKey($name)
-    {
-        return $name;
-    }
-
-    public function isFresh($name, $time)
+    public function isFresh($name, $time): bool
     {
         return true;
     }
 
-    public function exists($name)
+    public function exists($name): bool
     {
         return true;
     }
