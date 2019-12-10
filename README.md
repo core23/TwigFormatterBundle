@@ -8,10 +8,8 @@ TwigFormatterBundle
 [![Monthly Downloads](https://poser.pugx.org/core23/twig-formatter-bundle/d/monthly)](https://packagist.org/packages/core23/twig-formatter-bundle)
 [![Daily Downloads](https://poser.pugx.org/core23/twig-formatter-bundle/d/daily)](https://packagist.org/packages/core23/twig-formatter-bundle)
 
-[![Build Status](https://travis-ci.org/core23/TwigFormatterBundle.svg)](https://travis-ci.org/core23/TwigFormatterBundle)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/core23/TwigFormatterBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/core23/TwigFormatterBundle)
-[![Code Climate](https://codeclimate.com/github/core23/TwigFormatterBundle/badges/gpa.svg)](https://codeclimate.com/github/core23/TwigFormatterBundle)
-[![Coverage Status](https://coveralls.io/repos/core23/TwigFormatterBundle/badge.svg)](https://coveralls.io/r/core23/TwigFormatterBundle)
+[![Continuous Integration](https://github.com/core23/TwigFormatterBundle/workflows/Continuous%20Integration/badge.svg)](https://github.com/core23/TwigFormatterBundle/actions)
+[![Code Coverage](https://codecov.io/gh/core23/TwigFormatterBundle/branch/master/graph/badge.svg)](https://codecov.io/gh/core23/TwigFormatterBundle)
 
 This bundle provides a [twig] formatter for the [Sonata FormatterBundle].
 
