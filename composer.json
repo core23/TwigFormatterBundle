@@ -6,7 +6,8 @@
     "symfony",
     "formatter",
     "twig",
-    "sonata"
+    "sonata",
+    "sonata-formatter"
   ],
   "homepage": "https://core23.de",
   "license": "MIT",
