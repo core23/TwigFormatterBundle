@@ -12,7 +12,9 @@ declare(strict_types=1);
 namespace Core23\TwigFormatterBundle\Tests\App;
 
 use Core23\TwigFormatterBundle\Core23TwigFormatterBundle;
-use Core23\TwigFormatterBundle\Tests\App\Controller\TestController;
+use Core23\TwigFormatterBundle\Tests\App\Controller\TwigTestController;
+use Sonata\BlockBundle\SonataBlockBundle;
+use Sonata\FormatterBundle\SonataFormatterBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Bundle\TwigBundle\TwigBundle;
@@ -34,6 +36,8 @@ final class AppKernel extends Kernel
     {
         yield new FrameworkBundle();
         yield new TwigBundle();
+        yield new SonataBlockBundle();
+        yield new SonataFormatterBundle();
         yield new Core23TwigFormatterBundle();
     }
 
@@ -54,7 +58,7 @@ final class AppKernel extends Kernel
 
     protected function configureRoutes(RouteCollectionBuilder $routes): void
     {
-        $routes->add('/test', TestController::class);
+        $routes->add('/test', TwigTestController::class);
     }
 
     protected function configureContainer(ContainerBuilder $containerBuilder, LoaderInterface $loader): void

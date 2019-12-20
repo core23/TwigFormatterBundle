@@ -10,12 +10,19 @@ framework:
 twig:
     paths:
         - '%kernel.project_dir%/templates'
+        -
+sonata_formatter:
+    default_formatter: twig
+
+    formatters:
+        twig:
+            service: core23_twig_formatter.formatter
 
 services:
     _defaults:
         autowire: true
         autoconfigure: true
 
-    Core23\TwigFormatterBundle\Tests\App\Controller\TestController:
+    Core23\TwigFormatterBundle\Tests\App\Controller\TwigTestController:
         tags:
             - controller.service_arguments
