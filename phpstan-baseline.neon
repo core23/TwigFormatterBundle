@@ -1,0 +1,12 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Core23\\\\TwigFormatterBundle\\\\Tests\\\\Formatter\\\\TwigFormatterTest\\:\\:\\$twig has no typehint specified\\.$#"
+			count: 1
+			path: tests/Formatter/TwigFormatterTest.php
+
+		-
+			message: "#^Property Core23\\\\TwigFormatterBundle\\\\Tests\\\\Formatter\\\\TwigFormatterTest\\:\\:\\$formatter has no typehint specified\\.$#"
+			count: 1
+			path: tests/Formatter/TwigFormatterTest.php
+
