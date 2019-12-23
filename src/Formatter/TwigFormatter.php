@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace Core23\TwigFormatterBundle\Formatter;
 
+use RuntimeException;
 use Sonata\FormatterBundle\Extension\ExtensionInterface;
 use Sonata\FormatterBundle\Formatter\BaseFormatter;
 use Twig\Environment;
@@ -51,7 +52,7 @@ final class TwigFormatter extends BaseFormatter
 
     public function addExtension(ExtensionInterface $extensionInterface): void
     {
-        throw new \RuntimeException('Extensions are not yet supported');
+        throw new RuntimeException('Extensions are not yet supported');
     }
 
     public function getExtensions(): array
