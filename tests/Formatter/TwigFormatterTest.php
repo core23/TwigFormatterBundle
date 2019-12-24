@@ -18,8 +18,14 @@ use Twig\Environment;
 
 class TwigFormatterTest extends TestCase
 {
+    /**
+     * @var Environment
+     */
     private $twig;
 
+    /**
+     * @var TwigFormatter
+     */
     private $formatter;
 
     protected function setUp(): void
